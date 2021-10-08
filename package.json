@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:stage": "jest",
     "prepare": "husky install"
   },
   "author": "Silvano Santana",
