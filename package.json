@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "prepare": "husky install",
+    "start": "tsnd --respawn --transpile-only src/application/server.ts",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:ci": "npm test -- --coverage",
     "test:integration": "npm test -- --watch -c ./jest-integration-config.ts",
@@ -36,6 +37,7 @@
     "supertest": "^6.1.6",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
   }
 }
