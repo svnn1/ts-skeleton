@@ -1,5 +1,13 @@
+/* eslint-disable import/first */
+import dotenv from 'dotenv';
+
+dotenv.config({
+  path: '.env',
+});
+
 import { setupApp } from './config/app';
+import { PORT } from './config/env';
 
 setupApp().then((app) => {
-  app.listen(3000, () => console.log('Server running at http://localhost:3000'));
+  app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
 });
