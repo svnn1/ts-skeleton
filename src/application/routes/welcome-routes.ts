@@ -1,10 +1,6 @@
 import { Router } from 'express';
+import { WelcomeController } from '../controllers/welcome-controller';
 
 export default (router: Router): void => {
-  router.get('/', (req, res) => {
-    res.status(200).send({
-      statusCode: 200,
-      data: 'Welcome fella',
-    });
-  });
+  router.get('/', (req, res) => (new WelcomeController()).handle(req, res));
 };
