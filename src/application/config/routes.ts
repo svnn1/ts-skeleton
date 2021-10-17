@@ -1,5 +1,5 @@
 import { Express, Router } from 'express';
-import welcomeRoutes from '../routes/welcome-routes';
+import welcomeRoutes from '../routes/welcomeRoutes';
 
 export default (app: Express): void => {
   const router = Router();
