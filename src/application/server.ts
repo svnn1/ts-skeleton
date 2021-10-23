@@ -1,9 +1,4 @@
-/* eslint-disable import/first */
-import dotenv from 'dotenv';
-
-dotenv.config({
-  path: '.env',
-});
+import 'dotenv/config';
 
 import { setupApp } from './config/app';
 import { PORT } from './config/env';
